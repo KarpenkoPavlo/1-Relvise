@@ -1,4 +1,4 @@
-/*zeroing--------------------------------------------------*/
+/*zeroing*/
 *{padding:0;margin:0;border:0;}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 :focus,:active{outline:none;}
@@ -15,7 +15,7 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
-/*---------------------------------------------------------*/
+/**/
 
 body{
     height: 100%;
@@ -50,7 +50,7 @@ body{
     object-fit: cover;
 }
 
-/*header----------------------------------------------------*/
+/*header*/
 
 .header {
     position: absolute;
@@ -111,14 +111,18 @@ body{
     line-height: (24 / 14 * 100%);
 }
 .menu_link:hover {
-    text-decoration: underline;
+    color: #ca6137;
+    transition: all 0.3s ease 0s;
+}
+.menu_link:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 @media (max-width: 479px) {
     .menu_link {
         font-size: 18px;
     }
 }
-/*page------------------------------------------------------*/
+/*page*/
 .page {
     flex: 1 1 auto;
 }
@@ -144,7 +148,7 @@ body{
 }
 .page__contact {
 }
-/*--header block--------------------------------------------*/
+/*header block*/
 .header-block {
     text-align: center;
     letter-spacing: 0.2px;
@@ -172,11 +176,10 @@ body{
         font-size: 30px;
     }
 }
-/*footer----------------------------------------------------*/
+/*footer*/
 .footer {
-
 }
-/*main-block------------------------------------------------*/
+/*main-block*/
 .main-block {
     position: relative;
 }
@@ -285,7 +288,7 @@ body{
         opacity: 0.5;
     }
 }
-/*---------------------------------------------------------*/
+/**/
 .services {
 }
 .services_container {
@@ -360,7 +363,7 @@ body{
     color: #737373;
     line-height: 142%;
 }
-/*---------------------------------------------------------*/
+/**/
 .advantages {
     padding: 80px 0;
 }
@@ -429,7 +432,7 @@ body{
     font-size: 16px;
     line-height: 150%;
 }
-/*---------------------------------------------------------*/
+/**/
 .practice {
     padding: 125px 0px 80px 0px;
 }
@@ -490,7 +493,11 @@ body{
     display: inline-block;
 }
 .item-practice__link:hover {
-    text-decoration: underline;
+    color: #ca6137;
+    transition: all 0.3s ease 0s;
+}
+.item-practice__link:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .item-practice__link:not(:last-child) {
     margin: 0px 0px 15px 0px;
@@ -509,7 +516,7 @@ body{
     display: block;
     padding: 0px 0px 60% 0px;
 }
-/*---------------------------------------------------------*/
+/**/
 .whoweare {
     background: #ffffff;
     padding: 80px 0px 13px 0px;
@@ -629,7 +636,7 @@ body{
 .whoweare__video:not(:last-child) {
     margin: 30px 0px 0px 0px;
 }
-/*---------------------------------------------------------*/
+/**/
 .clients {
     padding: 50px 0px;
 }
@@ -655,7 +662,7 @@ body{
 .clients__item img {
     max-width: 100%;
 }
-/*---------------------------------------------------------*/
+/**/
 .subscribe {
     position: relative;
     padding: 0px 0px 20px 0px;
@@ -745,6 +752,10 @@ body{
 }
 .subscribe__button:hover {
     background: #ca6137;
+    transition: all 0.3s ease 0s;
+}
+.subscribe__button:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 @media (max-width: 810px) {
     .subscribe__button {
@@ -754,7 +765,7 @@ body{
         padding: 0px 15px;
     }
 }
-/*---------------------------------------------------------*/
+/**/
 .getintouch {
     padding: 80px 0px 135px 0px;
 }
@@ -766,7 +777,6 @@ body{
 .getintouch__items {
     margin: 0px -15px;
 }
-
 .getintouch__item {
     flex: 0 1 33.333%;
 }
@@ -805,7 +815,11 @@ body{
     font-size: 16px;
 }
 .item-getintouch__email:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.item-getintouch__email:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .item-getintouch__label {
     font-weight: 700;
@@ -826,9 +840,13 @@ body{
     border-radius: 5px;
 }
 .item-getintouch__button:hover {
+    transform: scale(0.95);
     border: 1px solid #ff7b47;
     background-color: #ff7b47;
     color: #fff;
+}
+.item-getintouch__button:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 @media (min-width: 992px) {
     .getintouch__items {
@@ -853,7 +871,7 @@ body{
         margin: 0px 0px 30px 0px;
     }
 }
-/*---------------------------------------------------------*/
+/**/
 .contact {
     background: #fff;
     padding: 42px 0;
@@ -873,7 +891,6 @@ body{
     .contact__content {
         padding: 0px 20px 0px 0px;
     }
-    
 }
 .contact__title {
     font-weight: 700;
@@ -901,9 +918,14 @@ body{
     color: #fff;
 }
 .contact__button:hover {
-    background-color: #aa5330;
+    background-color: #db6232;
+    transform: scale(0.9);
+    transition: all 0.3s ease 0s;
 }
-/*---------------------------------------------------------*/
+.contact__button:not(:hover) {
+    transition: all 0.5s ease 0s;
+}
+/**/
 .footer {
 }
 .footer__top {
@@ -960,7 +982,11 @@ body{
     letter-spacing: 0.2px;
 }
 .menu-footer__link:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.menu-footer__link:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .footer__contacts {
 }
@@ -977,7 +1003,11 @@ body{
     min-height: 30px;
 }
 .contacts-footer__item:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.contacts-footer__item:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 .contacts-footer__item:not(:last-child) {
     margin: 0px 0px 12px 0px;
@@ -1011,6 +1041,13 @@ body{
 }
 .social__item:not(:last-child) {
     margin: 0px 20px 0px 0px;
+}
+.social__item:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.social__item:not(:hover) {
+    transition: all 0.5s ease 0s;
 }
 @media (max-width: 767px) {
     .footer__container {
